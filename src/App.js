@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Divider } from 'semantic-ui-react'
+import { Container, Grid } from 'semantic-ui-react'
+
+import resume from '../data/resume.json'
+
+import BasicsHeader from './components/basicheader'
+import Content from './components/content'
 
 import './css/App.css';
 
@@ -13,10 +18,13 @@ class App extends Component {
 
 
   render() {
-
+    console.log(resume);
     return (
-      <Container fluid>
-
+      <Container fluid className="well">
+        <Grid>
+          <BasicsHeader basics={resume.basics} />
+          <Content resume={resume} />
+        </Grid>
       </Container>
     );
   }

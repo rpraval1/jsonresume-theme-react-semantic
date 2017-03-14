@@ -2,8 +2,41 @@
   text-align: center;
 }
 
+body{
+  font-family: Lato,sans-serif;
+}
+
 
 .App-header {
   background-color: #222;
   height: 200px;
+}
+
+.ui.top.attached.header{
+  width: inherit;
+}
+
+.well{
+  background: #f4f6f6!important;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+.no_bg{
+  background: none!important;
+}
+
+.no_border{
+  border: 0px!important;
+}
+
+.positionLabel{
+  color: #95a5a6;
+  font-size: 24px!important;
+}
+
+.basicsName{
+  border-top: 2px solid #5f9fde!important;
+  border-bottom: 1px solid #7b8896!important;
+  color: rgba(35, 42, 62, 0.72)!important;
 }
