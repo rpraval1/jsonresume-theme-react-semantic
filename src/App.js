@@ -18,9 +18,9 @@ class App extends Component {
 
 
   render() {
-    console.log(resume);
+
     return (
-      <Container fluid className="well">
+      <Container fluid>
         <Grid>
           <BasicsHeader basics={resume.basics} />
           <Content resume={resume} />

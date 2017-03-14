@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Grid, Header,Segment } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
+
+import Contact from './contact'
+import Website from './website'
+import About from './about'
+import Profiles from './profiles'
+import Work from './work'
 
 class Content extends Component {
 
@@ -11,16 +17,15 @@ class Content extends Component {
   }
 
   render() {
-
+    const {resume} = this.props
 
     return (
       <Grid.Row>
-        <Grid.Column width={4}>
-          
-        </Grid.Column>
-        <Grid.Column width={12}>
-
-        </Grid.Column>
+        <Contact contactDetails={resume.basics} />
+        <Website contactDetails={resume.basics} />
+        <About summary={resume.basics.summary} />
+        <Profiles profilesArr={resume.basics.profiles} />
+        <Work workArr={resume.work} />
       </Grid.Row>
     )
   }

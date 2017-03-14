@@ -13,10 +13,9 @@ class BasicsHeader extends Component {
   render() {
 
     const {basics} = this.props
-    console.log(basics);
 
     return (
-      <Grid.Row>
+      <Grid.Row className="well">
         <Header as='h1' attached='top' textAlign='center' className="basicsName no_bg">
           {basics.name}
         </Header>

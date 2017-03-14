@@ -36,7 +36,7 @@ body{
 }
 
 .basicsName{
-  border-top: 2px solid #5f9fde!important;
-  border-bottom: 1px solid #7b8896!important;
+  border-bottom: 2px solid #5f9fde!important;
+  /*border-bottom: 1px solid #7b8896!important;*/
   color: rgba(35, 42, 62, 0.72)!important;
 }
