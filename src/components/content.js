@@ -5,7 +5,9 @@ import Contact from './contact'
 import Website from './website'
 import About from './about'
 import Profiles from './profiles'
-import Work from './work'
+import DataCard from './dataCard'
+import Education from './education'
+
 
 class Content extends Component {
 
@@ -25,7 +27,10 @@ class Content extends Component {
         <Website contactDetails={resume.basics} />
         <About summary={resume.basics.summary} />
         <Profiles profilesArr={resume.basics.profiles} />
-        <Work workArr={resume.work} />
+        <DataCard dataArr={resume.work} name="Work" type="work"/>
+        <DataCard dataArr={resume.volunteer} name="Volunteer" type="volunteer"/>
+        <Education dataArr={resume.education} name="Education" />
+
       </Grid.Row>
     )
   }

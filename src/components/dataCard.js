@@ -3,7 +3,7 @@ import { Item, Icon, Label, Grid,Header, List, Container } from 'semantic-ui-rea
 
 import SectionLabel from './sectionLabel';
 
-class Work extends Component {
+class DataCard extends Component {
 
   constructor(props){
     super(props);
@@ -14,49 +14,57 @@ class Work extends Component {
 
 
 
-  renderWork(){
-    const{workArr} = this.props
+  renderData(){
+    const{dataArr, type} = this.props
 
-    return workArr.map(work => {
+    return dataArr.map(data => {
       var endDate = " - Current"
-      if(work.endDate) {
-        endDate = " - " + work.endDate
+      var entityName = ""
+      if(type == "work"){
+        entityName = data.company
+      } else if(type=="volunteer"){
+        entityName = data.organization
       }
+
+      if(data.endDate) {
+        endDate = " - " + data.endDate
+      }
+
       return (
-        <Item key={work.company}>
+        <Item key={entityName}>
           <Item.Content>
 
             <Item.Header>
 
               <Header as='h2' floated='left'>
-                {work.company}
-                <Header.Subheader color="grey" >
-                  {work.startDate} {endDate}
-                  <Header as='h6' floated='right' color="grey" >
-                    <Label as='a' href={work.website} target="_blank" size="mini">
-                      <Icon name='linkify' color="teal" />
-                      {work.website}
-                    </Label>
-                  </Header>
-                </Header.Subheader>
+                {entityName}
+                <Label as='a' href={data.website} target="_blank" size="mini">
+                  <Icon name='linkify' color="teal" />
+                  {data.website}
+                </Label>
+                
               </Header>
+
             </Item.Header>
             <Item.Meta>
               <Header as='h4'>
-                {work.position}
+                {data.position}
+                <Header as="h6" color="grey" >
+                  {data.startDate} {endDate}
+                </Header>
               </Header>
             </Item.Meta>
             <Item.Description>
-              {work.summary}
+              {data.summary}
             </Item.Description>
             <Item.Extra>
-              {work.highlights.length > 0 ?
+              {data.highlights.length > 0 ?
 
               <List>
                 <List.Item>
                   <Header sub>Highlights</Header>
                   {
-                    work.highlights.map(highlight => {
+                    data.highlights.map(highlight => {
                       return (
                         <List.List key={highlight}>
                           <List.Item>
@@ -83,20 +91,20 @@ class Work extends Component {
   }
 
   render() {
-    const{workArr} = this.props
+    const{dataArr, name, type} = this.props
 
-    if(!workArr) return (
+    if(!dataArr) return (
       <Container></Container>
     )
 
     return (
       <Grid>
         <Grid.Row>
-          <SectionLabel name="Work" />
+          <SectionLabel name={name} />
           <Grid.Column width={11}>
             <Container textAlign='left'>
               <Item.Group>
-                {this.renderWork()}
+                {this.renderData()}
               </Item.Group>
             </Container>
           </Grid.Column>
@@ -107,4 +115,4 @@ class Work extends Component {
 
 }
 
-export default Work;
+export default DataCard;
