@@ -3,22 +3,30 @@ Using [React](https://facebook.github.io/react/) and [Semantic-UI](http://react.
 
 # [Live Demo](http://pravallika.me/resume)
 
-### Options to create .json file
-- Use [Resume Editor](http://registry.jsonresume.org/)
-- Refer [RESUME.JSON](https://jsonresume.org/schema/) and create on your own
 
-#### Once, you have created the .json file place it at following location:
+
+#### Clone Repo 
+
+```
+git clone https://github.com/rpraval1/jsonresume-theme-react-semantic.git
+cd jsonresume-theme-react-semantic
+
 ```
 
-data/resume.json
+##### Create .json file
+- OPTION 1: Use [Resume Editor](http://registry.jsonresume.org/)
+- OPTION 2: Refer [RESUME.JSON](https://jsonresume.org/schema/) and create on your own
+
+##### Once, you have created the .json file place it under jsonresume-theme-react-semantic folder :
+```
+
+/data/resume.json
 
 ```
 
 #### Follow below steps to have your resume ready at http://localhost:3000
 
 ```
-git clone https://github.com/rpraval1/jsonresume-theme-react-semantic.git
-cd jsonresume-theme-react-semantic
 npm install
 npm start
 
