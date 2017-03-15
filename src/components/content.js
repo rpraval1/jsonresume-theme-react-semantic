@@ -9,6 +9,10 @@ import DataCard from './dataCard'
 import Education from './education'
 import Awards from './awards'
 import Publications from './publications'
+import Skills from './skills'
+import Languages from './languages'
+import Interests from './interests'
+import References from './references'
 
 
 class Content extends Component {
@@ -34,7 +38,10 @@ class Content extends Component {
         <Education dataArr={resume.education} name="Education" />
         <Awards dataArr={resume.awards} name="Awards" />
         <Publications dataArr={resume.publications} name="Publications" />
-
+        <Skills dataArr={resume.skills} name="Skills" />
+        <Languages dataArr={resume.languages} name="Languages" />
+        <Interests dataArr={resume.interests} name="Interests" />
+        <References dataArr={resume.references} name="References" />
       </Grid.Row>
     )
   }

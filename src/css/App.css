@@ -40,3 +40,13 @@ body{
   /*border-bottom: 1px solid #7b8896!important;*/
   color: rgba(35, 42, 62, 0.72)!important;
 }
+
+
+
+.tagListContainer{
+  margin-bottom: 10px!important;
+}
+
+.tagItem{
+  margin: 3px!important;
+}

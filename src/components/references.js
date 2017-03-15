@@ -3,7 +3,7 @@ import { Button, Item, Icon, Label, Grid,Header, List, Container } from 'semanti
 
 import SectionLabel from './sectionLabel';
 
-class Awards extends Component {
+class References extends Component {
 
   constructor(props){
     super(props);
@@ -21,33 +21,19 @@ class Awards extends Component {
 
 
       return (
-        <Item key={data.title}>
+        <Item key={data.language}>
           <Item.Content>
-
             <Item.Header>
-
               <Header as='h2' floated='left'>
-                <Icon name='trophy' color='teal' />
+                <Icon name='star' color='teal' />
                 <Header.Content>
-                  {data.title}
+                  {data.name}
                   <Header.Subheader>
-                    {data.awarder}
+                    {data.reference}
                   </Header.Subheader>
                 </Header.Content>
               </Header>
-
             </Item.Header>
-            <Item.Meta>
-              <Header as='h4'>
-                <Header.Content>
-                  {data.date}
-                </Header.Content>
-              </Header>
-            </Item.Meta>
-            <Item.Description>
-               {data.summary}
-            </Item.Description>
-
           </Item.Content>
         </Item>
       )
@@ -79,4 +65,4 @@ class Awards extends Component {
 
 }
 
-export default Awards;
+export default References;

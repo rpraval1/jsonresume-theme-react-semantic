@@ -20,10 +20,13 @@ class DataCard extends Component {
     return dataArr.map(data => {
       var endDate = " - Current"
       var entityName = ""
+      var iconName = "suitcase"
       if(type == "work"){
         entityName = data.company
+
       } else if(type=="volunteer"){
         entityName = data.organization
+        iconName = "world"
       }
 
       if(data.endDate) {
@@ -36,12 +39,17 @@ class DataCard extends Component {
 
             <Item.Header>
 
-              <Header as='h2' floated='left'>
-                {entityName}
-                <Label as='a' href={data.website} target="_blank" size="mini">
-                  <Icon name='linkify' color="teal" />
-                  {data.website}
-                </Label>
+              <Header as='h2'>
+                <Icon name={iconName} color='grey' />
+                <Header.Content>
+                  {entityName}
+                  <Header.Subheader>
+                    <Label as='a' href={data.website} target="_blank" size="mini">
+                      <Icon name='linkify' color="teal" />
+                      {data.website}
+                    </Label>
+                  </Header.Subheader>
+                </Header.Content>
 
               </Header>
 

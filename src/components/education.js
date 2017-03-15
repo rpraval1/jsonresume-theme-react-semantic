@@ -40,7 +40,7 @@ class Education extends Component {
             </Item.Header>
             <Item.Meta>
               <Header as='h4'>
-                <Icon name='student' />
+                <Icon name='student' color='teal' />
                 <Header.Content>
                   {data.area}
                   <Header.Subheader>
