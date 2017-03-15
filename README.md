@@ -1,11 +1,11 @@
 # jsonresume-theme-react-semantic
-Using [React](https://facebook.github.io/react/) and [Semantic-UI](http://react.semantic-ui.com) based open source schema : [JSON Schema](https://jsonresume.org/schema/) as an input
+Using [React](https://facebook.github.io/react/) and [Semantic-UI](http://react.semantic-ui.com) based on open source schema : [JSON Schema](https://jsonresume.org/schema/) as an input
 
 # [Live Demo](http://pravallika.me/resume)
 
 
 
-#### Clone Repo 
+#### Clone Repo
 
 ```
 git clone https://github.com/rpraval1/jsonresume-theme-react-semantic.git
