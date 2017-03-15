@@ -21,7 +21,7 @@ class References extends Component {
 
 
       return (
-        <Item key={data.language}>
+        <Item key={data.name}>
           <Item.Content>
             <Item.Header>
               <Header as='h2' floated='left'>

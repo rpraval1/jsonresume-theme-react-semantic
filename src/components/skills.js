@@ -36,7 +36,7 @@ class Skills extends Component {
               ]
               var color = colors[Math.floor(Math.random() * colors.length)]
               return (
-                <Label key={keyword} as='a' className="tagItem" color={color}>
+                <Label key={keyword} as='a' className="tagItem" color={color} size="mini">
                   <Icon name='tag' />
                   {keyword}
                 </Label>
