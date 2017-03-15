@@ -24,7 +24,7 @@ class References extends Component {
         <Item key={data.name}>
           <Item.Content>
             <Item.Header>
-              <Header as='h2' floated='left'>
+              <Header as='h3' floated='left'>
                 <Icon name='star' color='teal' />
                 <Header.Content>
                   {data.name}
@@ -43,7 +43,7 @@ class References extends Component {
   render() {
     const{dataArr, name} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
 

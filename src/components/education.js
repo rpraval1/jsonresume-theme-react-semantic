@@ -30,7 +30,7 @@ class Education extends Component {
 
             <Item.Header>
 
-              <Header as='h2' floated='left'>
+              <Header as='h3' floated='left'>
                 {data.institution}
                 <Header.Subheader color="grey" >
                   {data.startDate} {endDate}
@@ -89,10 +89,10 @@ class Education extends Component {
   render() {
     const{dataArr, name} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
-
+    
     return (
       <Grid>
         <Grid.Row>

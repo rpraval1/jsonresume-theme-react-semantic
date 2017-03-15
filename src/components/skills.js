@@ -22,7 +22,7 @@ class Skills extends Component {
 
       return (
         <Container key={data.name} className="tagListContainer">
-          <Header as="h2">
+          <Header as="h3">
             {data.name}
             <Header.Subheader>
               {data.level}
@@ -51,7 +51,7 @@ class Skills extends Component {
   render() {
     const{dataArr, name} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
 

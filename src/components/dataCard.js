@@ -39,7 +39,7 @@ class DataCard extends Component {
 
             <Item.Header>
 
-              <Header as='h2'>
+              <Header as='h3'>
                 <Icon name={iconName} color='grey' />
                 <Header.Content>
                   {entityName}
@@ -101,7 +101,7 @@ class DataCard extends Component {
   render() {
     const{dataArr, name, type} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
 

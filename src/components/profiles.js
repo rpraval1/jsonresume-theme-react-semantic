@@ -35,7 +35,7 @@ class Profiles extends Component {
   render() {
     const{profilesArr} = this.props
 
-    if(!profilesArr) return (
+    if(profilesArr.length == 0) return (
       <Container></Container>
     )
 

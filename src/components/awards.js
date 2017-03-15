@@ -26,7 +26,7 @@ class Awards extends Component {
 
             <Item.Header>
 
-              <Header as='h2' floated='left'>
+              <Header as='h3' floated='left'>
                 <Icon name='trophy' color='teal' />
                 <Header.Content>
                   {data.title}
@@ -57,7 +57,7 @@ class Awards extends Component {
   render() {
     const{dataArr, name} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
 

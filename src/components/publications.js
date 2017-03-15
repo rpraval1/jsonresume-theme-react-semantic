@@ -22,7 +22,7 @@ class Publications extends Component {
 
       return (
         <Message icon key={data.name}>
-          <Icon name='book'  />
+          <Icon name='book' size="mini"  />
           <Message.Content>
             <Message.Header>
               {data.name}
@@ -52,7 +52,7 @@ class Publications extends Component {
   render() {
     const{dataArr, name} = this.props
 
-    if(!dataArr) return (
+    if(dataArr.length == 0) return (
       <Container></Container>
     )
 

@@ -24,8 +24,8 @@ class Languages extends Component {
         <Item key={data.language}>
           <Item.Content>
             <Item.Header>
-              <Header as='h2' floated='left'>
-                <Icon name='trophy' />
+              <Header as='h3' floated='left'>
+
                 <Header.Content>
                   {data.language}
                   <Header.Subheader>
