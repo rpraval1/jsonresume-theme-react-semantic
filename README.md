@@ -1,7 +1,7 @@
 # jsonresume-theme-react-semantic
 Using [React](https://facebook.github.io/react/) and [Semantic-UI](http://react.semantic-ui.com) based open source schema : [JSON Schema](https://jsonresume.org/schema/) as an input
 
-#[Live Demo](http://pravallika.me/resume)
+# [Live Demo](http://pravallika.me/resume)
 
 ### Options to create .json file
 - Use [Resume Editor](http://registry.jsonresume.org/)
