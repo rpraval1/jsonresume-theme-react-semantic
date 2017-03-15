@@ -23,3 +23,6 @@ npm install
 npm start
 
 ```
+
+## License
+Available under [MIT License](http://mths.be/mit)
