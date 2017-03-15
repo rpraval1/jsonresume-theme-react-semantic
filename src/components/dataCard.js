@@ -42,16 +42,16 @@ class DataCard extends Component {
                   <Icon name='linkify' color="teal" />
                   {data.website}
                 </Label>
-                
+
               </Header>
 
             </Item.Header>
             <Item.Meta>
               <Header as='h4'>
                 {data.position}
-                <Header as="h6" color="grey" >
+                <Header.Subheader color="grey" >
                   {data.startDate} {endDate}
-                </Header>
+                </Header.Subheader>
               </Header>
             </Item.Meta>
             <Item.Description>

@@ -32,9 +32,9 @@ class Education extends Component {
 
               <Header as='h2' floated='left'>
                 {data.institution}
-                <Header as="h6" color="grey" >
+                <Header.Subheader color="grey" >
                   {data.startDate} {endDate}
-                </Header>
+                </Header.Subheader>
               </Header>
 
             </Item.Header>

@@ -7,6 +7,8 @@ import About from './about'
 import Profiles from './profiles'
 import DataCard from './dataCard'
 import Education from './education'
+import Awards from './awards'
+import Publications from './publications'
 
 
 class Content extends Component {
@@ -30,6 +32,8 @@ class Content extends Component {
         <DataCard dataArr={resume.work} name="Work" type="work"/>
         <DataCard dataArr={resume.volunteer} name="Volunteer" type="volunteer"/>
         <Education dataArr={resume.education} name="Education" />
+        <Awards dataArr={resume.awards} name="Awards" />
+        <Publications dataArr={resume.publications} name="Publications" />
 
       </Grid.Row>
     )
